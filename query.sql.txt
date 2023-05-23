@@ -1,0 +1,5 @@
+SELECT time, today, yesterday, avg_last_week, avg_last_month,
+       today - avg_last_week AS diff_today_avg_week,
+       today - avg_last_month AS diff_today_avg_month
+FROM sales_data
+ORDER BY time;
